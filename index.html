@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render UI with Vanilla Js</title>
+    <style>
+        body {
+            background-color: #007bec;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .cart {
+            width: 100px;
+            height: 100;
+            border-radius: 10px;
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        span {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="./index.js" type="module"></script>
+
+
+    <!-- <div class="container">
+        <div class="cart">
+            <span>name: poriya</span>
+            <span>age: 30</span>
+        </div>
+        <div class="cart">
+            <span>name: milad</span>
+            <span>age: 24</span>
+        </div>
+        <div class="cart">
+            <span>name: amir</span>
+            <span>age: 20</span>
+        </div>
+    </div> -->
+    <!-- <script>
+        const container = document.createElement('div');
+        container.classList.add('container');
+
+        function genrateCart(name, age) {
+            const cart = document.createElement('div');
+            cart.classList.add('cart');
+
+            const nameEl = document.createElement('span');
+            nameEl.innerText = `name: ${name}`;
+
+            const ageEl = document.createElement('span');
+            ageEl.innerText = `age: ${age}`;
+
+            cart.appendChild(nameEl);
+            cart.appendChild(ageEl);
+
+            return cart;
+        }
+
+        const userData = [{
+                name: 'poriya',
+                age: 30
+            },
+            {
+                name: 'milad',
+                age: 24
+            },
+            {
+                name: 'amir',
+                age: 20
+            },
+        ]
+
+        userData.forEach(data => {
+            container.appendChild(genrateCart(data.name, data.age));
+        })
+
+
+        document.body.appendChild(container);
+    </script> -->
+
+
+</body>
+
+</html>
